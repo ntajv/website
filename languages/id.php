@@ -88,6 +88,44 @@ $lang = [
     'faq_4_q' => 'Bagaimana cara booking?',
     'faq_4_a' => 'Anda bisa melakukan booking melalui formulir di website ini atau langsung chat melalui WhatsApp kami untuk respon yang lebih cepat.',
 
+    'read_more' => 'Selengkapnya',
+
+    // Home Infusion Details
+    'infusion_title' => 'Layanan Home Infusion Kami',
+    'infusion_subtitle' => 'Dapatkan berbagai perawatan infus vitamin dan pemulihan kesehatan tanpa perlu beranjak dari kenyamanan rumah Anda.',
+    'infusion_list' => [
+        [
+            'name' => 'Infus Vitamin',
+            'desc' => 'Untuk meningkatkan daya tahan tubuh (immune booster), mengatasi kelelahan, mengatasi defisiensi nutrisi, dan mempercepat pemulihan.',
+            'icon' => 'fa-shield-heart'
+        ],
+        [
+            'name' => 'Remedy',
+            'desc' => 'Untuk pemulihan, seperti menstrual remedy (nyeri haid), itchy remedy (alergi/gatal), hingga recovery boost (kelelahan).',
+            'icon' => 'fa-pills'
+        ],
+        [
+            'name' => 'Vaksin Influenza Quadrivalent (4 strain)',
+            'desc' => 'Melindungi diri dan orang sekitar dari penyakit pernapasan menular, serta mencegah gejala berat/rawat inap, terutama pada lansia, anak-anak, dan ibu hamil.',
+            'icon' => 'fa-syringe'
+        ],
+        [
+            'name' => 'Slimming Drip',
+            'desc' => 'Treatment kulit yang bertujuan untuk membantu menurunkan berat badan dengan cara memberikan nutrisi langsung ke dalam tubuh melalui infus.',
+            'icon' => 'fa-weight-scale'
+        ],
+        [
+            'name' => 'Infus Whitening',
+            'desc' => 'Prosedur kecantikan medis untuk mencerahkan dan meratakan warna kulit dengan memasukkan campuran zat aktif—seperti glutathione, vitamin C, dan kolagen—langsung ke dalam aliran darah melalui infus.',
+            'icon' => 'fa-wand-magic-sparkles'
+        ],
+        [
+            'name' => 'Infus Hangover',
+            'desc' => 'Prosedur medis/estetika yang memasukkan cairan elektrolit, vitamin (B kompleks & C), serta obat mual/nyeri secara langsung (infus) ke aliran darah untuk mengatasi gejala mabuk alkohol.',
+            'icon' => 'fa-glass-water-droplet'
+        ]
+    ],
+
     // Blog
     'blog_title' => 'Edukasi Kesehatan',
     'blog_subtitle' => 'Informasi kesehatan terbaru dari tim medis kami.',

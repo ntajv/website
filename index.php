@@ -17,7 +17,16 @@ $services_data = [];
 try {
     if (isset($conn)) {
         // Alias columns to generic 'title' and 'description' for easier usage
-        $stmt = $conn->query("SELECT id, $title_col as title, $desc_col as description, icon_class FROM services");
+        // Order by forcing 'Home Infusion' to the bottom
+        $stmt = $conn->query("
+            SELECT id, $title_col as title, $desc_col as description, icon_class 
+            FROM services
+            ORDER BY CASE 
+                WHEN title = 'Home Infusion' THEN 1
+                WHEN title_en = 'Home Infusion' THEN 1
+                ELSE 0 
+            END ASC, id ASC
+        ");
         $services_data = $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 } catch (PDOException $e) {
@@ -175,9 +184,17 @@ try {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php if (!empty($services_data)): ?>
                 <?php foreach ($services_data as $service): ?>
+                    <?php
+                    // Check if it's "Home Infusion" (case-insensitive check to be safe)
+                    $isHomeInfusion = (stripos($service['title'], 'Home Infusion') !== false);
+
+                    // If it's Home Infusion, we want it to span the full grid on LG screens to force it to a new line,
+                    // and then center its content/width
+                    $gridClass = $isHomeInfusion ? "lg:col-span-3 lg:w-1/3 mx-auto w-full" : "";
+                    ?>
                     <!-- Service Item -->
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-transparent hover:border-brand-teal group text-center">
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-transparent hover:border-brand-teal group text-center <?php echo $gridClass; ?>">
                         <div
                             class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-teal transition">
                             <i
@@ -186,9 +203,15 @@ try {
                         <h3 class="text-xl font-bold text-brand-dark mb-3">
                             <?php echo htmlspecialchars($service['title']); ?>
                         </h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
                             <?php echo htmlspecialchars($service['description']); ?>
                         </p>
+                        <?php if ($isHomeInfusion): ?>
+                            <a href="service_infusion.php<?php echo $qs; ?>"
+                                class="inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold rounded-full hover:bg-brand-teal hover:text-white transition">
+                                <?php echo $lang['read_more']; ?> <i class="fa-solid fa-arrow-right ml-1 text-sm"></i>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>

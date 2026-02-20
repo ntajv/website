@@ -4,9 +4,8 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <!-- Brand -->
             <div class="md:col-span-1">
-                <div class="flex items-center gap-2 mb-4">
-                    <i class="fa-solid fa-heart-pulse text-brand-teal text-2xl"></i>
-                    <span class="text-xl font-bold">Vananta Care</span>
+                <div class="mb-4">
+                    <img src="assets/img/logo-white.png" alt="Vananta Care Logo" class="h-12 w-auto object-contain">
                 </div>
                 <p class="text-gray-400 text-sm leading-relaxed mb-6">
                     <?php echo $lang['footer_desc']; ?>

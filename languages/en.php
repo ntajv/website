@@ -88,6 +88,44 @@ $lang = [
     'faq_4_q' => 'How to book?',
     'faq_4_a' => 'You can book via the form on this website or directly chat via WhatsApp for a faster response.',
 
+    'read_more' => 'Read More',
+
+    // Home Infusion Details
+    'infusion_title' => 'Our Home Infusion Services',
+    'infusion_subtitle' => 'Get various vitamin IV treatments and health recovery without leaving the comfort of your home.',
+    'infusion_list' => [
+        [
+            'name' => 'Vitamin IV Drip',
+            'desc' => 'To boost immunity, overcome fatigue, address nutritional deficiencies, and accelerate recovery.',
+            'icon' => 'fa-shield-heart'
+        ],
+        [
+            'name' => 'Remedy Drip',
+            'desc' => 'For recovery, such as menstrual remedy, itchy remedy (allergies), to recovery boost (fatigue).',
+            'icon' => 'fa-pills'
+        ],
+        [
+            'name' => 'Quadrivalent Influenza Vaccine (4 Strains)',
+            'desc' => 'Protects you and those around you from contagious respiratory diseases, and prevents severe symptoms or hospitalization, especially for the elderly, children, and pregnant women.',
+            'icon' => 'fa-syringe'
+        ],
+        [
+            'name' => 'Slimming Drip',
+            'desc' => 'Skin treatment aimed at helping weight loss by providing nutrients directly into the body through an IV.',
+            'icon' => 'fa-weight-scale'
+        ],
+        [
+            'name' => 'Whitening Drip',
+            'desc' => 'A medical beauty procedure to brighten and even out skin tone by introducing active ingredients—such as glutathione, vitamin C, and collagen—directly into the bloodstream via IV.',
+            'icon' => 'fa-wand-magic-sparkles'
+        ],
+        [
+            'name' => 'Hangover IV Drip',
+            'desc' => 'A medical/aesthetic procedure that introduces electrolyte fluids, vitamins (B complex & C), and anti-nausea/pain medications directly into the bloodstream to treat alcohol hangover symptoms.',
+            'icon' => 'fa-glass-water-droplet'
+        ]
+    ],
+
     // Blog
     'blog_title' => 'Health Education',
     'blog_subtitle' => 'Latest health information from our medical team.',
