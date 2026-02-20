@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Allow access to directories and files directly
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Check if the request + .php exists as a file
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
