@@ -69,25 +69,29 @@ $section_link = $is_home ? '' : 'index.php' . $qs; // Empty on home page for pur
 
     <!-- Mobile Menu Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 space-y-4 shadow-lg">
-        <a href="<?php echo $section_link; ?>#home"
-            class="block text-brand-dark font-medium"><?php echo $lang['home']; ?></a>
-        <a href="<?php echo $section_link; ?>#about"
-            class="block text-brand-dark font-medium"><?php echo $lang['about']; ?></a>
-        <a href="<?php echo $section_link; ?>#services"
-            class="block text-brand-dark font-medium"><?php echo $lang['services']; ?></a>
-        <a href="<?php echo $section_link; ?>#faq"
-            class="block text-brand-dark font-medium"><?php echo $lang['faq']; ?></a>
-        <a href="<?php echo $section_link; ?>#blog" class="block text-brand-dark font-medium"><?php echo $lang['blog']; ?></a>
+        <a href="<?php echo $section_link; ?>#home" class="block text-brand-dark font-medium"
+            onclick="toggleMenu()"><?php echo $lang['home']; ?></a>
+        <a href="<?php echo $section_link; ?>#about" class="block text-brand-dark font-medium"
+            onclick="toggleMenu()"><?php echo $lang['about']; ?></a>
+        <a href="<?php echo $section_link; ?>#services" class="block text-brand-dark font-medium"
+            onclick="toggleMenu()"><?php echo $lang['services']; ?></a>
+        <a href="<?php echo $section_link; ?>#faq" class="block text-brand-dark font-medium"
+            onclick="toggleMenu()"><?php echo $lang['faq']; ?></a>
+        <a href="<?php echo $section_link; ?>#blog" class="block text-brand-dark font-medium"
+            onclick="toggleMenu()"><?php echo $lang['blog']; ?></a>
 
         <div class="flex gap-4 pt-2 border-t border-gray-100 justify-center">
             <a href="?lang=id"
-                class="px-2 py-1 text-sm font-bold <?php echo $lang_code == 'id' ? 'bg-brand-teal text-white rounded' : 'text-gray-500'; ?>">Indonesia</a>
+                class="px-2 py-1 text-sm font-bold <?php echo $lang_code == 'id' ? 'bg-brand-teal text-white rounded' : 'text-gray-500'; ?>"
+                onclick="toggleMenu()">Indonesia</a>
             <a href="?lang=en"
-                class="px-2 py-1 text-sm font-bold <?php echo $lang_code == 'en' ? 'bg-brand-teal text-white rounded' : 'text-gray-500'; ?>">English</a>
+                class="px-2 py-1 text-sm font-bold <?php echo $lang_code == 'en' ? 'bg-brand-teal text-white rounded' : 'text-gray-500'; ?>"
+                onclick="toggleMenu()">English</a>
         </div>
 
         <a href="<?php echo $link_prefix; ?>#contact"
-            class="block w-full text-center px-5 py-3 bg-brand-teal text-white font-bold rounded-md">
+            class="block w-full text-center px-5 py-3 bg-brand-teal text-white font-bold rounded-md"
+            onclick="toggleMenu()">
             <?php echo $lang['book_appointment']; ?>
         </a>
     </div>
