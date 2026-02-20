@@ -98,7 +98,7 @@ $lang = [
     'footer_desc' => 'Modern Medical Care at Home. Your family\'s trusted health partner, creating hospital care comfort in your own home.',
     'footer_menu' => 'Menu',
     'footer_contact' => 'Contact Us',
-    'footer_office' => 'Tokopedia Tower 22F floor (Ciputra Wrold 2)<br>Jl. Prof. DR. Satrio No.Kav. 11, Jakarta Selatan 12950',
+    'footer_office' => 'Tokopedia Tower 22F floor (Ciputra World 2)<br>Jl. Prof. DR. Satrio No.Kav. 11, Jakarta Selatan 12950',
 
     // Sticky
     'sticky_text' => '🔥 Need Medical Service Now? Our Team is Ready.',
