@@ -44,7 +44,7 @@ include 'includes/navbar.php';
         </div>
 
         <div class="mt-16 text-center">
-            <a href="index.php<?php echo $qs; ?>#contact"
+            <a href="./<?php echo $qs; ?>#contact"
                 class="inline-block px-8 py-4 bg-brand-teal text-white font-bold rounded-lg shadow-md hover:bg-teal-700 transition transform hover:-translate-y-1">
                 <?php echo $lang['book_appointment']; ?>
             </a>

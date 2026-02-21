@@ -207,8 +207,9 @@ try {
                             <?php echo htmlspecialchars($service['description']); ?>
                         </p>
                         <?php if ($isHomeInfusion): ?>
-                            <a href="service_infusion.php<?php echo $qs; ?>"
-                                class="inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold rounded-full hover:bg-brand-teal hover:text-white transition">
+                            <a href="service_infusion<?php echo $qs; ?>"
+                                            class=" inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold
+                    rounded-full hover:bg-brand-teal hover:text-white transition">
                                 <?php echo $lang['read_more']; ?> <i class="fa-solid fa-arrow-right ml-1 text-sm"></i>
                             </a>
                         <?php endif; ?>

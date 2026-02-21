@@ -19,9 +19,9 @@ require_once __DIR__ . '/../languages/' . $lang_code . '.php';
 
 $current_page = basename($_SERVER['PHP_SELF'], '.php');
 $is_home = ($current_page == 'index');
-$link_prefix = $is_home ? '' : 'index.php'; // Force index.php for cleanliness
+$link_prefix = $is_home ? '' : './'; // Point to root for cleanliness
 $qs = ($lang_code == 'en') ? '?lang=en' : '';
-$section_link = $is_home ? '' : 'index.php' . $qs; // Empty on home page for pure hash scrolling
+$section_link = $is_home ? '' : './' . $qs; // Empty on home page for pure hash scrolling
 ?>
 <nav class="bg-white/95 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300" id="navbar">
     <div class="container mx-auto px-6 py-4">
