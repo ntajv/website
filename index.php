@@ -39,8 +39,12 @@ try {
 
     <!-- Background Image & Overlay -->
     <div class="absolute inset-0 z-0">
-        <!-- Image Source: Updated to a brighter, cleaner medical care image -->
-        <img src="assets/img/image-bg.jpeg" alt="Bright Medical Care" class="w-full h-full object-cover">
+        <!-- Image Source: Desktop (hidden on mobile) -->
+        <img src="assets/img/image-bg.jpeg" alt="Bright Medical Care Desktop"
+            class="hidden md:block w-full h-full object-cover">
+        <!-- Image Source: Mobile (hidden on desktop) -->
+        <img src="assets/img/image-bg-mobile.jpg" alt="Bright Medical Care Mobile"
+            class="block md:hidden w-full h-full object-cover">
         <!-- Overlay: Updated to lighter teal gradient for brighter feel while maintaining text readability -->
         <div class="absolute inset-0 bg-gradient-to-r from-teal-700/90 via-teal-800/50 to-transparent"></div>
     </div>
@@ -207,8 +211,7 @@ try {
                             <?php echo htmlspecialchars($service['description']); ?>
                         </p>
                         <?php if ($isHomeInfusion): ?>
-                            <a href="service_infusion<?php echo $qs; ?>"
-                                            class=" inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold
+                            <a href="service_infusion<?php echo $qs; ?>" class=" inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold
                     rounded-full hover:bg-brand-teal hover:text-white transition">
                                 <?php echo $lang['read_more']; ?> <i class="fa-solid fa-arrow-right ml-1 text-sm"></i>
                             </a>
