@@ -109,16 +109,7 @@ $lang = [
             'desc' => 'Protects you and those around you from contagious respiratory diseases, and prevents severe symptoms or hospitalization, especially for the elderly, children, and pregnant women.',
             'icon' => 'fa-syringe'
         ],
-        [
-            'name' => 'Slimming Drip',
-            'desc' => 'Skin treatment aimed at helping weight loss by providing nutrients directly into the body through an IV.',
-            'icon' => 'fa-weight-scale'
-        ],
-        [
-            'name' => 'Whitening Drip',
-            'desc' => 'A medical beauty procedure to brighten and even out skin tone by introducing active ingredients—such as glutathione, vitamin C, and collagen—directly into the bloodstream via IV.',
-            'icon' => 'fa-wand-magic-sparkles'
-        ],
+
         [
             'name' => 'Hangover Recovery Drip',
             'desc' => 'IV therapy to help recover the body after alcohol consumption. Contains electrolyte fluids, B complex vitamins, vitamin C, and supportive medications delivered directly into the bloodstream to help reduce nausea, dizziness, weakness, and dehydration. Administered by professional medical personnel to help the body feel fresh and energized again.',

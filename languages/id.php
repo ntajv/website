@@ -109,16 +109,7 @@ $lang = [
             'desc' => 'Melindungi diri dan orang sekitar dari penyakit pernapasan menular, serta mencegah gejala berat/rawat inap, terutama pada lansia, anak-anak, dan ibu hamil.',
             'icon' => 'fa-syringe'
         ],
-        [
-            'name' => 'Slimming Drip',
-            'desc' => 'Treatment kulit yang bertujuan untuk membantu menurunkan berat badan dengan cara memberikan nutrisi langsung ke dalam tubuh melalui infus.',
-            'icon' => 'fa-weight-scale'
-        ],
-        [
-            'name' => 'Infus Whitening',
-            'desc' => 'Prosedur kecantikan medis untuk mencerahkan dan meratakan warna kulit dengan memasukkan campuran zat aktif—seperti glutathione, vitamin C, dan kolagen—langsung ke dalam aliran darah melalui infus.',
-            'icon' => 'fa-wand-magic-sparkles'
-        ],
+
         [
             'name' => 'Infus Hangover Recovery',
             'desc' => 'Terapi infus untuk membantu memulihkan tubuh setelah konsumsi alkohol. Mengandung cairan elektrolit, vitamin B kompleks, vitamin C, dan obat pendukung yang disalurkan langsung ke aliran darah untuk membantu mengurangi mual, pusing, lemas, dan dehidrasi. Dilakukan oleh tenaga medis profesional agar tubuh kembali segar dan bertenaga.',
