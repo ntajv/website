@@ -120,8 +120,8 @@ $lang = [
             'icon' => 'fa-wand-magic-sparkles'
         ],
         [
-            'name' => 'Infus Hangover',
-            'desc' => 'Prosedur medis/estetika yang memasukkan cairan elektrolit, vitamin (B kompleks & C), serta obat mual/nyeri secara langsung (infus) ke aliran darah untuk mengatasi gejala mabuk alkohol.',
+            'name' => 'Infus Hangover Recovery',
+            'desc' => 'Terapi infus untuk membantu memulihkan tubuh setelah konsumsi alkohol. Mengandung cairan elektrolit, vitamin B kompleks, vitamin C, dan obat pendukung yang disalurkan langsung ke aliran darah untuk membantu mengurangi mual, pusing, lemas, dan dehidrasi. Dilakukan oleh tenaga medis profesional agar tubuh kembali segar dan bertenaga.',
             'icon' => 'fa-glass-water-droplet'
         ]
     ],

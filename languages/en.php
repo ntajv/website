@@ -120,8 +120,8 @@ $lang = [
             'icon' => 'fa-wand-magic-sparkles'
         ],
         [
-            'name' => 'Hangover IV Drip',
-            'desc' => 'A medical/aesthetic procedure that introduces electrolyte fluids, vitamins (B complex & C), and anti-nausea/pain medications directly into the bloodstream to treat alcohol hangover symptoms.',
+            'name' => 'Hangover Recovery IV Drip',
+            'desc' => 'IV therapy to help recover the body after alcohol consumption. Contains electrolyte fluids, B complex vitamins, vitamin C, and supportive medications delivered directly into the bloodstream to help reduce nausea, dizziness, weakness, and dehydration. Administered by professional medical personnel to help the body feel fresh and energized again.',
             'icon' => 'fa-glass-water-droplet'
         ]
     ],
