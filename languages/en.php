@@ -120,7 +120,7 @@ $lang = [
             'icon' => 'fa-wand-magic-sparkles'
         ],
         [
-            'name' => 'Hangover Recovery IV Drip',
+            'name' => 'Hangover Recovery Drip',
             'desc' => 'IV therapy to help recover the body after alcohol consumption. Contains electrolyte fluids, B complex vitamins, vitamin C, and supportive medications delivered directly into the bloodstream to help reduce nausea, dizziness, weakness, and dehydration. Administered by professional medical personnel to help the body feel fresh and energized again.',
             'icon' => 'fa-glass-water-droplet'
         ]
