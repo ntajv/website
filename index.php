@@ -244,7 +244,7 @@ try {
         <div class="flex flex-col lg:flex-row items-center gap-16">
 
             <!-- Text Content -->
-            <div class="lg:w-1/2 order-2 lg:order-1">
+            <div class="w-full">
                 <span
                     class="text-brand-teal font-semibold uppercase tracking-wider text-sm"><?php echo $lang['why_choose_us_label']; ?></span>
                 <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2 mb-6">
@@ -254,7 +254,7 @@ try {
                     <?php echo $lang['why_choose_us_desc']; ?>
                 </p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Feature 1 -->
                     <div class="flex items-start gap-4">
                         <div
@@ -264,7 +264,8 @@ try {
                         <div>
                             <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['certified_team']; ?></h4>
                             <p class="text-slate-500 text-sm leading-relaxed">
-                                <?php echo $lang['certified_team_desc']; ?></p>
+                                <?php echo $lang['certified_team_desc']; ?>
+                            </p>
                         </div>
                     </div>
 
@@ -277,7 +278,8 @@ try {
                         <div>
                             <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['hospital_standard']; ?></h4>
                             <p class="text-slate-500 text-sm leading-relaxed">
-                                <?php echo $lang['hospital_standard_desc']; ?></p>
+                                <?php echo $lang['hospital_standard_desc']; ?>
+                            </p>
                         </div>
                     </div>
 
@@ -303,7 +305,8 @@ try {
                         <div>
                             <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['flexible_practical']; ?></h4>
                             <p class="text-slate-500 text-sm leading-relaxed">
-                                <?php echo $lang['flexible_practical_desc']; ?></p>
+                                <?php echo $lang['flexible_practical_desc']; ?>
+                            </p>
                         </div>
                     </div>
 
@@ -316,7 +319,8 @@ try {
                         <div>
                             <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['transparent_price']; ?></h4>
                             <p class="text-slate-500 text-sm leading-relaxed">
-                                <?php echo $lang['transparent_price_desc']; ?></p>
+                                <?php echo $lang['transparent_price_desc']; ?>
+                            </p>
                         </div>
                     </div>
 
@@ -329,38 +333,14 @@ try {
                         <div>
                             <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['humanist_approach']; ?></h4>
                             <p class="text-slate-500 text-sm leading-relaxed">
-                                <?php echo $lang['humanist_approach_desc']; ?></p>
+                                <?php echo $lang['humanist_approach_desc']; ?>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Image Side with Overlay -->
-            <div class="lg:w-1/2 order-1 lg:order-2 relative">
-                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                    alt="Happy Elderly Patient" class="rounded-2xl shadow-2xl w-full object-cover h-[500px]">
 
-                <!-- Floating Testimonial Card (Like in design) -->
-                <!-- <div
-                    class="absolute bottom-6 right-6 md:right-[-20px] bg-white p-6 rounded-lg shadow-xl max-w-xs border-l-4 border-brand-teal animate-fade-in-up">
-                    <div class="flex text-yellow-400 text-sm mb-2">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-700 italic text-sm mb-3">
-                        "The Vananta Care team was a blessing during our recovery. Their attention and empathy made the
-                        difference."
-                    </p>
-                    <div class="flex items-center gap-2">
-                        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
-                        <div class="w-2 h-2 rounded-full bg-brand-teal"></div>
-                        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
-                    </div>
-                </div> -->
-            </div>
 
         </div>
     </div>
