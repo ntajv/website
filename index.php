@@ -256,57 +256,81 @@ try {
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <!-- Feature 1 -->
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-start gap-4">
                         <div
-                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal">
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal mt-1">
                             <i class="fa-solid fa-user-doctor"></i>
                         </div>
-                        <h4 class="font-bold text-brand-dark"><?php echo $lang['certified_team']; ?></h4>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['certified_team']; ?></h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                <?php echo $lang['certified_team_desc']; ?></p>
+                        </div>
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-start gap-4">
                         <div
-                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal">
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal mt-1">
                             <i class="fa-solid fa-hospital"></i>
                         </div>
-                        <h4 class="font-bold text-brand-dark"><?php echo $lang['hospital_standard']; ?></h4>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['hospital_standard']; ?></h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                <?php echo $lang['hospital_standard_desc']; ?></p>
+                        </div>
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-start gap-4">
                         <div
-                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal">
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal mt-1">
                             <i class="fa-solid fa-phone"></i>
                         </div>
-                        <h4 class="font-bold text-brand-dark"><?php echo $lang['fast_response']; ?></h4>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['fast_response']; ?></h4>
+                            <p class="text-slate-500 text-sm leading-relaxed"><?php echo $lang['fast_response_desc']; ?>
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-start gap-4">
                         <div
-                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal">
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal mt-1">
                             <i class="fa-solid fa-clock"></i>
                         </div>
-                        <h4 class="font-bold text-brand-dark"><?php echo $lang['flexible_practical']; ?></h4>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['flexible_practical']; ?></h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                <?php echo $lang['flexible_practical_desc']; ?></p>
+                        </div>
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-start gap-4">
                         <div
-                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal">
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal mt-1">
                             <i class="fa-solid fa-hand-holding-dollar"></i>
                         </div>
-                        <h4 class="font-bold text-brand-dark"><?php echo $lang['transparent_price']; ?></h4>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['transparent_price']; ?></h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                <?php echo $lang['transparent_price_desc']; ?></p>
+                        </div>
                     </div>
 
                     <!-- Feature 6 -->
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-start gap-4">
                         <div
-                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal">
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center text-brand-teal mt-1">
                             <i class="fa-solid fa-heart"></i>
                         </div>
-                        <h4 class="font-bold text-brand-dark"><?php echo $lang['humanist_approach']; ?></h4>
+                        <div>
+                            <h4 class="font-bold text-brand-dark mb-1"><?php echo $lang['humanist_approach']; ?></h4>
+                            <p class="text-slate-500 text-sm leading-relaxed">
+                                <?php echo $lang['humanist_approach_desc']; ?></p>
+                        </div>
                     </div>
                 </div>
             </div>
