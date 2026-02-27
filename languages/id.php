@@ -22,12 +22,13 @@ $lang = [
     'about_desc_1' => 'Vananta Care lahir dari kebutuhan akan layanan medis yang tidak hanya profesional, tetapi juga manusiawi. <br/><br/>Kami percaya bahwa perawatan terbaik dimulai dari rasa aman, empati, dan kehadiran yang tepat—langsung di tempat pasien merasa paling nyaman: rumah.',
     'about_desc_2' => 'Simbol “V” merepresentasikan Vitality, Value, dan Vigilance—kehidupan, nilai, dan ketelitian medis. Garis denyut jantung menegaskan komitmen kami terhadap standar kesehatan, sementara simbol “+” melambangkan pertolongan dan harapan. <br/><br/>Sebagai penyedia layanan medical homecare modern, Vananta Care mengintegrasikan tenaga medis bersertifikat, teknologi terkini, dan pendekatan personal untuk memastikan setiap pasien mendapatkan perawatan yang aman, nyaman, dan bermartabat. <br/><br/>Kami hadir untuk mendampingi Anda dalam setiap fase kehidupan—mulai dari pencegahan dan peningkatan kesehatan, perawatan intensif, hingga pendampingan di masa kritis dan proses pemulihan, dengan penuh tanggung jawab dan empati.',
     'vision_title' => 'Visi',
-    'vision_desc' => 'Menjadi penyedia layanan homecare terpercaya dan terdepan di Indonesia.',
+    'vision_desc' => 'Menjadi penyedia layanan medical homecare terintegrasi terdepan di Indonesia yang menghadirkan perawatan premium dan penuh empati di setiap fase kehidupan.',
     'mission_title' => 'Misi',
-    'mission_1' => 'Memberikan pelayanan medis berkualitas tinggi',
-    'mission_2' => 'Menjaga standar keselamatan pasien',
-    'mission_3' => 'Menghadirkan perawatan yang manusiawi',
-    'mission_4' => 'Mengembangkan layanan berbasis teknologi',
+    'mission_1' => 'Memberikan layanan medis berstandar rumah sakit langsung di rumah pasien.',
+    'mission_2' => 'Menjaga standar tertinggi dalam keselamatan, etika, dan profesionalisme.',
+    'mission_3' => 'Menghadirkan perawatan yang humanis dan personal, dari pencegahan hingga pendampingan paliatif.',
+    'mission_4' => 'Memanfaatkan teknologi untuk layanan kesehatan yang cepat, mudah diakses, dan terpercaya.',
+    'mission_5' => 'Mengembangkan kompetensi tim medis secara berkelanjutan melalui pelatihan dan inovasi.',
 
     // Services Section
     'our_services_title' => 'Layanan Kami',

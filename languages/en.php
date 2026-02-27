@@ -24,10 +24,11 @@ $lang = [
     'vision_title' => 'Our Vision',
     'vision_desc' => 'To be the most trusted and leading homecare service provider in Indonesia.',
     'mission_title' => 'Our Mission',
-    'mission_1' => 'Providing high-quality medical services',
-    'mission_2' => 'Maintaining patient safety standards',
-    'mission_3' => 'Presenting humanistic care',
-    'mission_4' => 'Developing technology-based services',
+    'mission_1' => 'To provide hospital-standard medical services in the comfort of patients’ homes.',
+    'mission_2' => 'To ensure the highest standards of safety, ethics, and professionalism.',
+    'mission_3' => 'To deliver humane and personalized care from prevention to palliative support.',
+    'mission_4' => 'To leverage technology for fast, accessible, and reliable healthcare services.',
+    'mission_5' => 'To continuously develop medical teams through training and innovation.',
 
     // Services Section
     'our_services_title' => 'Our Services',

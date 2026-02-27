@@ -163,6 +163,10 @@ try {
                         <i class="fa-solid fa-circle-check text-brand-teal text-lg"></i>
                         <span class="text-slate-700 font-medium"><?php echo $lang['mission_4']; ?></span>
                     </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-brand-teal text-lg"></i>
+                        <span class="text-slate-700 font-medium"><?php echo $lang['mission_5']; ?></span>
+                    </li>
                 </ul>
 
                 <div class="mt-10">
