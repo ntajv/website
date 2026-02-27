@@ -407,7 +407,7 @@ try {
                             </div>
                             <div>
                                 <p class="text-sm text-blue-200"><?php echo $lang['hotline']; ?></p>
-                                <p class="font-bold">628111955112</p>
+                                <p class="font-bold">08111955112</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-4">
@@ -644,7 +644,7 @@ try {
         const date = document.getElementById('date').value;
 
         // Ganti nomor ini dengan nomor Admin Vananta Care
-        const adminPhone = '628111955112';
+        const adminPhone = '08111955112';
 
         const message = `Halo Vananta Care, saya ingin melakukan appointment.%0A%0A` +
             `*Nama*: ${name}%0A` +

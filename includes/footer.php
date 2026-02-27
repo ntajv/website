@@ -58,7 +58,7 @@
                     </li>
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-phone text-brand-teal"></i>
-                        <span>628111955112 (Hotline 24/7)</span>
+                        <span>08111955112 (Hotline 24/7)</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <i class="fa-solid fa-envelope text-brand-teal"></i>
