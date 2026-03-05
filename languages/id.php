@@ -131,7 +131,7 @@ $lang = [
     'no_articles' => 'Belum ada artikel terbaru.',
 
     // Footer
-    'footer_desc' => 'Modern Medical Care at Home. Mitra kesehatan terpercaya keluarga Anda, memberikan kenyamanan perawatan rumah sakit di rumah sendiri.',
+    'footer_desc' => 'Premium Care. Trusted Medical. Mitra kesehatan terpercaya keluarga Anda, memberikan kenyamanan perawatan rumah sakit di rumah sendiri.',
     'footer_menu' => 'Menu',
     'footer_contact' => 'Hubungi Kami',
     'footer_office' => 'Tokopedia Tower 22F floor (Ciputra World 2)<br>Jl. Prof. DR. Satrio No.Kav. 11, Jakarta Selatan 12950',
