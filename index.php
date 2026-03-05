@@ -180,66 +180,8 @@ try {
     </div>
 </section>
 
-<!-- Services Section -->
-<section id="services" class="py-20 bg-slate-50">
-    <div class="container mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4"><?php echo $lang['our_services_title']; ?>
-            </h2>
-            <p class="text-slate-600"><?php echo $lang['our_services_desc']; ?></p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <?php if (!empty($services_data)): ?>
-                <?php foreach ($services_data as $service): ?>
-                    <?php
-                    // Check if it's "Home Infusion" or "Home Vaccination & Infusion Therapy"
-                    $isHomeInfusion = (stripos($service['title'], 'Infusion') !== false || stripos($service['title'], 'Infus') !== false);
-
-                    // If it's Home Infusion, we want it to span the full grid on LG screens to force it to a new line,
-                    // and then center its content/width
-                    $gridClass = $isHomeInfusion ? "lg:col-span-3 lg:w-1/3 mx-auto w-full" : "";
-                    ?>
-                    <!-- Service Item -->
-                    <div
-                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-transparent hover:border-brand-teal group text-center <?php echo $gridClass; ?>">
-                        <div
-                            class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-teal transition">
-                            <i
-                                class="fa-solid <?php echo htmlspecialchars($service['icon_class']); ?> text-4xl text-brand-teal group-hover:text-white transition"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-3">
-                            <?php echo htmlspecialchars($service['title']); ?>
-                        </h3>
-                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
-                            <?php echo $service['description']; ?>
-                        </p>
-                        <?php if ($isHomeInfusion): ?>
-                            <a href="service_infusion<?php echo $qs; ?>" class=" inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold
-                    rounded-full hover:bg-brand-teal hover:text-white transition">
-                                <?php echo $lang['read_more']; ?> <i class="fa-solid fa-arrow-right ml-1 text-sm"></i>
-                            </a>
-                        <?php endif; ?>
-                    </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <div class="col-span-3 text-center text-slate-500">
-                    <p>No services found in database. Please import the database.sql file.</p>
-                </div>
-            <?php endif; ?>
-        </div>
-
-        <!-- <div class="text-center mt-12">
-            <a href="#contact"
-                class="inline-block px-8 py-3 bg-brand-dark text-white font-medium rounded-full hover:bg-slate-800 transition">
-                Lihat Semua Layanan
-            </a>
-        </div> -->
-    </div>
-</section>
-
 <!-- Why Choose Us & CTA Section -->
-<section class="py-20 bg-white overflow-hidden">
+<section class="py-20 bg-slate-50 overflow-hidden">
     <div class="container mx-auto px-6">
         <div class="flex flex-col lg:flex-row items-center gap-16">
 
@@ -346,19 +288,120 @@ try {
     </div>
 </section>
 
+<!-- Services Section -->
+<section id="services" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4"><?php echo $lang['our_services_title']; ?>
+            </h2>
+            <p class="text-slate-600"><?php echo $lang['our_services_desc']; ?></p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <?php if (!empty($services_data)): ?>
+                <?php foreach ($services_data as $service): ?>
+                    <?php
+                    // Check if it's "Home Infusion" or "Home Vaccination & Infusion Therapy"
+                    $isHomeInfusion = (stripos($service['title'], 'Infusion') !== false || stripos($service['title'], 'Infus') !== false);
+
+                    // If it's Home Infusion, we want it to span the full grid on LG screens to force it to a new line,
+                    // and then center its content/width
+                    $gridClass = $isHomeInfusion ? "lg:col-span-3 lg:w-1/3 mx-auto w-full" : "";
+                    ?>
+                    <!-- Service Item -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-transparent hover:border-brand-teal group text-center <?php echo $gridClass; ?>">
+                        <div
+                            class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-teal transition">
+                            <i
+                                class="fa-solid <?php echo htmlspecialchars($service['icon_class']); ?> text-4xl text-brand-teal group-hover:text-white transition"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">
+                            <?php echo htmlspecialchars($service['title']); ?>
+                        </h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                            <?php echo $service['description']; ?>
+                        </p>
+                        <?php if ($isHomeInfusion): ?>
+                            <a href="service_infusion<?php echo $qs; ?>" class=" inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold
+                    rounded-full hover:bg-brand-teal hover:text-white transition">
+                                <?php echo $lang['read_more']; ?> <i class="fa-solid fa-arrow-right ml-1 text-sm"></i>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <div class="col-span-3 text-center text-slate-500">
+                    <p>No services found in database. Please import the database.sql file.</p>
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <!-- <div class="text-center mt-12">
+            <a href="#contact"
+                class="inline-block px-8 py-3 bg-brand-dark text-white font-medium rounded-full hover:bg-slate-800 transition">
+                Lihat Semua Layanan
+            </a>
+        </div> -->
+    </div>
+</section>
+
 <!-- Testimonials Section -->
 <section class="py-20 bg-brand-light">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold text-brand-dark mb-12"><?php echo $lang['testimonials_title']; ?></h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Testi 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-md text-left">
-                <div class="flex text-yellow-400 mb-4">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <!-- Testi 1 (Dian) -->
+            <div class="bg-white p-8 rounded-xl shadow-md text-left flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6"><?php echo $lang['testi_3_text']; ?></p>
                 </div>
-                <p class="text-slate-600 mb-6"><?php echo $lang['testi_1_text']; ?></p>
+                <div class="flex items-center gap-3">
+                    <img src="assets/img/testi-dian.jpeg" alt="Dian Puspita Eka Putri"
+                        class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <h5 class="font-bold text-brand-dark text-sm"><?php echo $lang['testi_3_author']; ?></h5>
+                        <p class="text-xs text-slate-400"><?php echo $lang['testi_3_location']; ?></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testi 2 (Novita) -->
+            <div class="bg-white p-8 rounded-xl shadow-md text-left flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6"><?php echo $lang['testi_4_text']; ?></p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <img src="assets/img/testi-novi.jpeg" alt="Novita Kusuma Wardani"
+                        class="w-10 h-10 rounded-full object-cover">
+                    <div>
+                        <h5 class="font-bold text-brand-dark text-sm"><?php echo $lang['testi_4_author']; ?></h5>
+                        <p class="text-xs text-slate-400"><?php echo $lang['testi_4_location']; ?></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testi 3 (Rina) -->
+            <div class="bg-white p-8 rounded-xl shadow-md text-left flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6"><?php echo $lang['testi_1_text']; ?></p>
+                </div>
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">
@@ -370,13 +413,16 @@ try {
                 </div>
             </div>
 
-            <!-- Testi 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-md text-left">
-                <div class="flex text-yellow-400 mb-4">
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <!-- Testi 4 (Andi) -->
+            <div class="bg-white p-8 rounded-xl shadow-md text-left flex flex-col justify-between">
+                <div>
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6"><?php echo $lang['testi_2_text']; ?></p>
                 </div>
-                <p class="text-slate-600 mb-6"><?php echo $lang['testi_2_text']; ?></p>
                 <div class="flex items-center gap-3">
                     <div
                         class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">

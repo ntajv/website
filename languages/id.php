@@ -60,6 +60,12 @@ $lang = [
     'testi_2_text' => '"Orang tua saya sangat terbantu dengan layanan Vananta Care. Perawatnya sabar dan telaten."',
     'testi_2_author' => 'Bapak Andi',
     'testi_2_location' => 'Bekasi',
+    'testi_3_text' => '"Makasih banget yaa Vananta Care, Masyaallah kami yg dari luar kota Jakarta yang harus berjuang dengan tumor otak di ibu kota Jakarta, sangat sangat terbantu dengan homecare Vananta Care. Pelayanan perawatnya super ramah di temani dari mulai urusan medis sampai membantu mencarikan sewa apartemen. Sukses selalu Vananta Care ❤️"',
+    'testi_3_author' => 'Dian Puspita Eka Putri',
+    'testi_3_location' => 'Pekan Baru (Dosen Universitas)',
+    'testi_4_text' => '"Saya sering sekali menggunakan pelayanan home care ini karena perawat yang melayani, merawat saya dengan sepenuh hati. Sat set cukup wa/calling buat janji. Apalagi di saat saya sedang sakit misalnya demam, asam lambung meronta, Vananta Home Care ini dapat segera datang dan melakukan tindakan medis sesuai dengan apa yang saya butuhkan. Sukses selalu Vananta Care!"',
+    'testi_4_author' => 'Novita Kusuma Wardani',
+    'testi_4_location' => 'Jakarta (Wirausaha)',
 
     // Booking Section
     'booking_title' => 'Buat Janji Sekarang',
