@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vananta Care - Modern Medical Care at Home</title>
+    <title>Vananta Care - Premium Care, Trusted Medical</title>
 
     <!-- Favicon / Tab Logo -->
     <link rel="icon" type="image/png" href="assets/img/icon.png">
