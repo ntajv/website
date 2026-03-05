@@ -32,7 +32,7 @@ $lang = [
 
     // Services Section
     'our_services_title' => 'Layanan Kami',
-    'our_services_desc' => 'Bagaimana Kami Dapat Membantu Anda. Kami menyediakan berbagai layanan medis profesional untuk kebutuhan Anda di rumah.',
+    'our_services_desc' => '<strong>Layanan Medis Terintegrasi, Langsung di Rumah Anda</strong><br>Kami menghadirkan layanan kesehatan berstandar rumah sakit yang terintegrasi untuk mendampingi Anda di setiap fase kehidupan—dengan aman, nyaman, dan profesional.',
     'view_all_services' => 'Lihat Semua Layanan',
 
     // Why Choose Us

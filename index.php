@@ -22,8 +22,8 @@ try {
             SELECT id, $title_col as title, $desc_col as description, icon_class 
             FROM services
             ORDER BY CASE 
-                WHEN title = 'Home Infusion' THEN 1
-                WHEN title_en = 'Home Infusion' THEN 1
+                WHEN title LIKE '%Infusion%' THEN 1
+                WHEN title_en LIKE '%Infusion%' THEN 1
                 ELSE 0 
             END ASC, id ASC
         ");
@@ -193,8 +193,8 @@ try {
             <?php if (!empty($services_data)): ?>
                 <?php foreach ($services_data as $service): ?>
                     <?php
-                    // Check if it's "Home Infusion" (case-insensitive check to be safe)
-                    $isHomeInfusion = (stripos($service['title'], 'Home Infusion') !== false);
+                    // Check if it's "Home Infusion" or "Home Vaccination & Infusion Therapy"
+                    $isHomeInfusion = (stripos($service['title'], 'Infusion') !== false || stripos($service['title'], 'Infus') !== false);
 
                     // If it's Home Infusion, we want it to span the full grid on LG screens to force it to a new line,
                     // and then center its content/width
@@ -212,7 +212,7 @@ try {
                             <?php echo htmlspecialchars($service['title']); ?>
                         </h3>
                         <p class="text-slate-500 text-sm leading-relaxed mb-4">
-                            <?php echo htmlspecialchars($service['description']); ?>
+                            <?php echo $service['description']; ?>
                         </p>
                         <?php if ($isHomeInfusion): ?>
                             <a href="service_infusion<?php echo $qs; ?>" class=" inline-block px-6 py-2 border-2 border-brand-teal text-brand-teal font-semibold

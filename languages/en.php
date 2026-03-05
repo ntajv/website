@@ -22,7 +22,7 @@ $lang = [
     'about_desc_1' => 'Vananta Care is a professional medical homecare provider focused on the comfort, safety, and quality of patient care at home.',
     'about_desc_2' => 'We believe that every patient deserves the best medical service without leaving the comfort of their home. We combine professional medical staff, technology, and empathy to provide the best care for you and your family.',
     'vision_title' => 'Our Vision',
-    'vision_desc' => 'To be the most trusted and leading homecare service provider in Indonesia.',
+    'vision_desc' => 'To become Indonesia’s leading integrated medical homecare provider, delivering premium and compassionate care at every stage of life.',
     'mission_title' => 'Our Mission',
     'mission_1' => 'To provide hospital-standard medical services in the comfort of patients’ homes.',
     'mission_2' => 'To ensure the highest standards of safety, ethics, and professionalism.',
@@ -32,7 +32,7 @@ $lang = [
 
     // Services Section
     'our_services_title' => 'Our Services',
-    'our_services_desc' => 'How We Can Help You. We provide various professional medical services for your needs at home.',
+    'our_services_desc' => '<strong>Comprehensive Medical Care, Delivered to Your Home</strong><br>We provide integrated, hospital-standard medical services designed to support your health at every stage of life—safely, comfortably, and professionally.',
     'view_all_services' => 'View All Services',
 
     // Why Choose Us
@@ -125,7 +125,7 @@ $lang = [
     'no_articles' => 'No recent articles yet.',
 
     // Footer
-    'footer_desc' => 'Modern Medical Care at Home. Your family\'s trusted health partner, creating hospital care comfort in your own home.',
+    'footer_desc' => 'Premium Care. Trusted Medical.<br>Your family’s trusted health partner, delivering hospital-standard care in the comfort of your home.',
     'footer_menu' => 'Menu',
     'footer_contact' => 'Contact Us',
     'footer_office' => 'Tokopedia Tower 22F floor (Ciputra World 2)<br>Jl. Prof. DR. Satrio No.Kav. 11, Jakarta Selatan 12950',
